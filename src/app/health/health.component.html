@@ -1,4 +1,4 @@
-
+<div class="container">
 <div  *ngIf="locations" >
   <div *ngFor="let location of locations ">
   <br>
@@ -12,7 +12,7 @@
           <th scope="col">CPU load %</th>
           <th scope="col">UP time</th>
           <th scope="col">TEMP</th>
-          <th scope="col">Free Memory</th>
+          <th scope="col">FREE Memory</th>
           <th scope="col">VOLTS</th>
           <th scope="col">IP-routes</th>
           <th scope="col">OSPF-neighbors</th>
@@ -21,17 +21,18 @@
       </thead>
       <tbody>
         <tr *ngFor="let statistic of location.statistics">
-          <td>{{statistic._id}}</td>
-          <td>{{statistic.identity}}</td>
-          <td>{{statistic['cpu-load']}}</td>
-          <td>{{statistic.uptime}}</td>
-          <td>{{statistic.temp}}</td>
-          <td>{{statistic['mem-free']}}</td>
-          <td>{{statistic.volts}}</td>
-          <td>{{statistic['ip-routes']}}</td>
-          <td>{{statistic['ospf-neighbors']}}</td>
+          <td><small>{{statistic._id}}</small></td>
+          <td><small>{{statistic.identity}}</small></td>
+          <td><small>{{statistic['cpu-load']}}</small></td>
+          <td><small>{{statistic.uptime}}</small></td>
+          <td><small>{{statistic.temp}}</small></td>
+          <td><small>{{statistic['mem-free']}}</small></td>
+          <td><small>{{statistic.volts}}</small></td>
+          <td><small>{{statistic['ip-routes']}}</small></td>
+          <td><small>{{statistic['ospf-neighbors']}}</small></td>
         </tr>
       </tbody>
     </table>
   </div>
+</div>
 </div>

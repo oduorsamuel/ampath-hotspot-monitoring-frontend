@@ -1,4 +1,4 @@
-
+<div class="container">
 <div style="text-align: center" *ngIf="bandwidth" >
     <div *ngFor="let location of bandwidth ">
       <br>
@@ -18,16 +18,17 @@
         </thead>
         <tbody>
           <tr *ngFor="let statistic of location.statistics">
-            <td>{{statistic._id}}</td>
-            <td>{{statistic.airTimeBalance}}</td>
-            <td>{{statistic.airTimeExpiry}}</td>
-            <td>{{statistic.dataBalance}}</td>
-            <td>{{statistic.dataExpiry}}</td>
+            <td><small>{{statistic._id}}</small></td>
+            <td><small>{{statistic.airTimeBalance}}</small></td>
+            <td><small>{{statistic.airTimeExpiry}}</small></td>
+            <td><small>{{statistic.dataBalance}}</small></td>
+            <td><small>{{statistic.dataExpiry}}</small></td>
 
           </tr>
         </tbody>
       </table>
     </div>
+  </div>
   </div>
   
   
