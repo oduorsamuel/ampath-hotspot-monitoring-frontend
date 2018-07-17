@@ -8,10 +8,11 @@
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Air Time Balance(Ksh)</th>
-            <th scope="col">Expiry Date</th>
+            <!--<th scope="col">Air Time Balance(Ksh)</th>-->
+            <!-- <th scope="col">Expiry Date</th> -->
             <th scope="col">Data Balance</th>
-            <th scope="col">Data Expiry</th>
+            <th scope="col">Date Recieved</th>
+            <th scope="col">Data Expiry Date</th>
 
   
           </tr>
@@ -19,9 +20,10 @@
         <tbody>
           <tr *ngFor="let statistic of location.statistics">
             <td><small>{{statistic._id}}</small></td>
-            <td><small>{{statistic.airTimeBalance}}</small></td>
-            <td><small>{{statistic.airTimeExpiry}}</small></td>
+           <!-- <td><small>{{statistic.airTimeBalance}}</small></td>-->
+            <!-- <td><small>{{statistic.airTimeExpiry}}</small></td> -->
             <td><small>{{statistic.dataBalance}}</small></td>
+            <td><small>{{statistic.dateTimeReceived}}</small></td>
             <td><small>{{statistic.dataExpiry}}</small></td>
 
           </tr>

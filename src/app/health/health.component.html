@@ -1,4 +1,5 @@
 <div class="container">
+
 <div  *ngIf="locations" >
   <div *ngFor="let location of locations ">
   <br>
@@ -8,12 +9,12 @@
       <thead >
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">IDENTITY</th>
+          <th scope="col">Identity</th>
           <th scope="col">CPU load %</th>
-          <th scope="col">UP time</th>
-          <th scope="col">TEMP</th>
-          <th scope="col">FREE Memory</th>
-          <th scope="col">VOLTS</th>
+          <th scope="col">Uptime</th>
+          <th scope="col">Temp C</th>
+          <th scope="col">Free Memory GB</th>
+          <th scope="col">Volts</th>
           <th scope="col">IP-routes</th>
           <th scope="col">OSPF-neighbors</th>
 
@@ -26,7 +27,7 @@
           <td><small>{{statistic['cpu-load']}}</small></td>
           <td><small>{{statistic.uptime}}</small></td>
           <td><small>{{statistic.temp}}</small></td>
-          <td><small>{{statistic['mem-free']}}</small></td>
+          <td><small>{{statistic['mem-free']/1024/1024 | number:'2.1-3'}}</small></td>
           <td><small>{{statistic.volts}}</small></td>
           <td><small>{{statistic['ip-routes']}}</small></td>
           <td><small>{{statistic['ospf-neighbors']}}</small></td>
