@@ -23,8 +23,8 @@
            <!-- <td><small>{{statistic.airTimeBalance}}</small></td>-->
             <!-- <td><small>{{statistic.airTimeExpiry}}</small></td> -->
             <td><small>{{statistic.dataBalance}}</small></td>
-            <td><small>{{statistic.dateTimeReceived}}</small></td>
-            <td><small>{{statistic.dataExpiry}}</small></td>
+            <td><small>{{statistic.dateTimeReceived | date:'medium' }}</small></td>
+            <td><small>{{statistic.dataExpiry | date:'medium'}}</small></td>
 
           </tr>
         </tbody>
