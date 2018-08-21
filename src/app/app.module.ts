@@ -11,7 +11,7 @@ import { AssetService } from './asset.service';
 import { HealthComponent } from './health/health.component';
 
 const appRoutes=[
-  { path: '', redirectTo: 'health', pathMatch: 'full' },
+  { path: '', redirectTo: 'bandwidth', pathMatch: 'full' },
   {
     
     path:'health', component: HealthComponent
